@@ -6,11 +6,11 @@ export default function Header() {
 
 return (
     <header className="flex justify-between px-5 py-2 bg-secondary">
-        <a className="font-bold  text-white" href="#" >Kamalnath_Dev</a>
+        <a className="font-bold  text-white" href="https://example.com" >Kamalnath_Dev</a>
 
     <nav className="hidden md:block">
         <ul className="flex text-white">
-            <li><a href="/">Home</a></li>
+            <li><a href="/home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#hero">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
@@ -21,7 +21,7 @@ return (
     {toggleMenu && 
         <nav className="block md:hidden ">
             <ul onClick= { () => setToggleMenu(!toggleMenu)} className="flex flex-col text-white mobile-nav">
-                <li><a href="/">Home</a></li>
+                <li><a href="/home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#hero">Projects</a></li>
                 <li><a href="#resume">Resume</a></li>

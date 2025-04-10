@@ -35,13 +35,13 @@ export default function Hero(){
         <div className=" w-full">
             <div className='flex flex-col md:flex-row px-5 gap-5'>
                 {config.Hero.map((Hero)=> (
-                <a href= {Hero.link}>
+                <a href= {Hero.link} target="_blank" rel="noopener noreferrer">
                         <div className='relative'>
-                        <img className='h-[200px] w-[500px]' src={Hero.image}/>
+                        <img className='h-[200px] w-[500px]' src={Hero.image} alt="Descriptive text"/>
                         <div className='absolute left-0 right-0 bottom-0 top-0 bg-primary opacity-0 duration-500 hover:opacity-100'>
                         <p className='text-center px-5 py-6'>{Hero.description}</p>
                         <div className=' flex justify-center'>
-                        <a className='btn' target='_blank' href = {Hero.link}>View Project</a>
+                        <a className='btn' href = {Hero.link} target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
                         </div> 
                     </div>
